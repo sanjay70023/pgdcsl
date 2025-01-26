@@ -1,0 +1,79 @@
+<!-- Q1: Create a simple HTML webpage with the following elements: headings, paragraphs, lists, images, links, and tables. 
+Implement a form in HTML with various input types such as text, password, radio buttons, checkboxes, and a submit button. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple HTML Webpage</title>
+</head>
+<body style="padding-left: 50px;">
+    <header>
+        <h1>Welcome to My Webpage</h1>
+        <p>This is a demonstration of a simple HTML webpage.</p>
+    </header>
+
+    <section>
+        <h2>Features</h2>
+        <ul>
+            <li>Headings</li>
+            <li>Paragraphs</li>
+            <li>Lists</li>
+            <li>Tables</li>
+            <li>Forms</li>
+        </ul>
+
+        <h2>Image and Link</h2>
+        <p>Below is an image with a link to Google:</p>
+        <a href="https://www.google.com" target="_blank">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+        </a>
+    </section>
+
+    <section>
+        <h2>Table Example</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>25</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>30</td>
+                <td>Los Angeles</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Form Example</h2>
+        <form action="/submit-form" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <p>Subscribe to:</p>
+            <input type="checkbox" id="newsletter" name="subscription" value="newsletter">
+            <label for="newsletter">Newsletter</label><br>
+            <input type="checkbox" id="updates" name="subscription" value="updates">
+            <label for="updates">Updates</label><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
+
